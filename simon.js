@@ -8,14 +8,16 @@ let score=0;
 let h2=document.querySelector("h2");
 let h4=document.querySelector("h4");
 
-document.addEventListener("keypress",function(){
-    if(started==false){
-        console.log("game started");
-        started=true;
+let startBtn = document.getElementById("startBtn");
 
+startBtn.addEventListener("click", function () {
+    if (!started) {
+        console.log("game started");
+        started = true;
         levelup();
+        startBtn.style.display = "none"; // hide after game starts
     }
-})
+});
 
 function gameFlash(btn){
     btn.classList.add("flash");
@@ -84,4 +86,5 @@ function reset(){
         score=level;
     }
     level=0;
+    startBtn.style.display = "block";
 }
