@@ -1,36 +1,56 @@
-body{
-  text-align: center;  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.btn{
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 1rem;
-}
-.btn-container{
-    display: flex;
-    justify-content: center;
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
 }
 
-.red{
-    background-color:#c7033e;
-}
-.yellow{
-    background-color:#f77002;
-}
-.blue{
-    background-color:#20b2df;
-}
-.purple{
-    background-color:#640370;
+h1, h2, h4 {
+  margin: 10px;
 }
 
-.flash{
-    background-color: white;
+#startBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 15px 0;
 }
 
-.userFlash{
-    background-color: greenyellow;
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
+
+/* Row for buttons */
+.line-one, .line-two {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive buttons */
+.btn {
+  width: 40vw;
+  height: 40vw;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 20%;
+  border: 5px solid black;
+}
+
+/* Colors */
+.red { background-color: #c7033e; }
+.yellow { background-color: #f77002; }
+.blue { background-color: #20b2df; }
+.purple { background-color: #640370; }
+
+/* Effects */
+.flash { background-color: white !important; }
+.userFlash { background-color: greenyellow !important; }
