@@ -37,7 +37,7 @@ function levelup(){
     userSeq=[];
     level++;
     h2.innerText=`level ${level}`;
-    h4.innerText=`Highest Sore= ${score}`;
+    h4.innerText=`Highest Score= ${score}`;
     let randomidx=Math.floor(Math.random()*3);
     let randomColor=buttons[randomidx];
     let randombtn=document.querySelector(`.${randomColor}`);
